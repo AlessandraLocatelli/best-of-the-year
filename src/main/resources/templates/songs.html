@@ -6,12 +6,13 @@
     <title>Songs</title>
 </head>
 <body>
-<div class="container flex justify-content-center m-5 text-uppercase">
+<div class="container m-5 text-uppercase fw-bold">
     <h1>Songs</h1>
     <ul>
-       <li th:each="song: ${bestSongs}" th:text="|Best Songs: ${song.songID} ${song.songTitle}|"></li>
+       <li th:each="song: ${bestSongs}" th:text="|${song.songID} ${song.songTitle}|"></li>
     </ul>
-    <img class="mt-3" src="artist.avif" alt="artist logo" >
+    <img class="m-2 w-50" src="artist.avif" alt="artist logo" >
+    <a class="btn btn-danger" th:href="@{/movies}">Check Best Movies</a>
 </div>
 </body>
 </html>
