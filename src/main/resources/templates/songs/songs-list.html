@@ -9,10 +9,11 @@
 <div class="container m-5 text-uppercase fw-bold">
     <h1>Songs</h1>
     <ul>
-       <li th:each="song: ${bestSongs}" th:text="|${song.songID} ${song.songTitle}|"></li>
+       <li th:each="song: ${songs}" th:text="|${song.songID} ${song.songTitle} ${song.songAuthor}|"></li>
     </ul>
     <img class="m-2 w-50" src="artist.avif" alt="artist logo" >
     <a class="btn btn-danger" th:href="@{/movies}">Check Best Movies</a>
+    <a class="btn btn-danger pt-2" th:href="@{/}">Return To HomePage</a>
 </div>
 </body>
 </html>

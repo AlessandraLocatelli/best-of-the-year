@@ -8,10 +8,10 @@
 <body>
 <div class="container text-center m-5 text-uppercase">
 
-    <h1 th:text="|Best of the year by ${bestArtist.firstName} ${bestArtist.lastName}|"></h1>
-    <img class="m-2 w-50" src="artist.avif" alt="artist logo" >
+    <h1 class="pe-5" th:text="|Best of the year by ${name}|"></h1>
+    <img class="p-3 w-50" src="artist.avif" alt="artist logo" >
     <a class="btn btn-danger" th:href="@{/songs}">Check Best Songs</a>
-    <img class="m-2 w-50" src="movies.jpeg" alt="artist logo" >
+    <img class="p-3 w-50" src="movies.jpeg" alt="artist logo" >
     <a class="btn btn-danger" th:href="@{/movies}">Check Best Movies</a>
 
 </div>

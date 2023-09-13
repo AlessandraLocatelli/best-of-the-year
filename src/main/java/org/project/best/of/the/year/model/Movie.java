@@ -1,13 +1,16 @@
-package org.project.best.of.the.year;
+package org.project.best.of.the.year.model;
 
 public class Movie {
 
     private int movieID;
     private String movieTitle;
 
-    public Movie(int movieID, String movieTitle) {
+    private String movieDirector;
+
+    public Movie(int movieID, String movieTitle, String movieDirector) {
         this.movieID = movieID;
         this.movieTitle = movieTitle;
+        this.movieDirector = movieDirector;
     }
 
    public Movie()
@@ -30,5 +33,13 @@ public class Movie {
 
     public void setMovieTitle(String movieTitle) {
         this.movieTitle = movieTitle;
+    }
+
+    public String getMovieDirector() {
+        return movieDirector;
+    }
+
+    public void setMovieDirector(String movieDirector) {
+        this.movieDirector = movieDirector;
     }
 }

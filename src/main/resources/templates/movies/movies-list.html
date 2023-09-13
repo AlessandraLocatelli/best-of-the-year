@@ -6,14 +6,16 @@
     <title>Movies</title>
 </head>
 <body>
-<div class="container m-5 text-uppercase fw-bold">
+<div class="container m-5 text-uppercase fw-bold
+">
     <h1>Movies</h1>
     <ul>
-        <li th:each="movie: ${bestMovies}" th:text="|${movie.movieID} ${movie.movieTitle}|"></li>
+        <li th:each="movie: ${movies}" th:text="|${movie.movieID} ${movie.movieTitle} ${movie.movieDirector}|"></li>
 
     </ul>
     <img class="m-2 w-50" src="movies.jpeg" alt="artist logo" >
     <a class="btn btn-danger" th:href="@{/songs}">Check Best Songs</a>
+    <a class="btn btn-danger pt-2" th:href="@{/}">Return To HomePage</a>
 </div>
 
 </body>
